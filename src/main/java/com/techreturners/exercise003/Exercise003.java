@@ -7,8 +7,8 @@ public class Exercise003 {
     // and so on.
 
     // Task
-    // Given an array of positive integers (the weights of the people), return a new array/tuple of two integers, where the first one is the total weight of 
-    // team 1, and the second one is the total weight of team 2.
+    // Given an array of positive integers (the weights of the people), return a new array/tuple of two integers, 
+    // where the first one is the total weight of team 1, and the second one is the total weight of team 2.
 
     // Notes
     // Array size is at least 1.
@@ -28,7 +28,19 @@ public class Exercise003 {
 
     public static int[] rowWeights(final int[] weights) {
         // Your code here!
-        return new int[]{0, 0};
+        int team1 = 0, team2 = 0;
+        for (int i=0; i<weights.length; i++)
+        {
+            if((i%2)==0)
+            { // Even
+                team1 += weights[i];
+            }
+            else
+            { // Odd
+                team2 += weights[i];
+            }
+        }
+        return new int[]{team1, team2};
     }
 
 }
