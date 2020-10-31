@@ -1,5 +1,8 @@
 package com.techreturners.exercise005;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Exercise005 {
 
     // Introduction
@@ -27,6 +30,27 @@ public class Exercise005 {
 
     public String[] mexicanWave(String str) {
         // Your code here!
-        return new String[] {};
+        List<String> result = new ArrayList<String>();
+        char[] c;
+        String s;
+
+        if ( str.isEmpty() )
+            return result.toArray(new String[0]);
+
+        for ( int i=0; i< str.length(); i++ )
+        {
+            if ( str.charAt(i) == ' ' )
+                continue;
+            
+            c = str.toCharArray();
+            s = "" + c[i]; 
+            s = s.toUpperCase();
+            //System.out.println("i: " + i + " s: " + s);
+            c[i] = s.charAt(0);
+            result.add(new String(c));      
+        }
+
+        //System.out.println("Result: " + result.toString());
+        return result.toArray(new String[0]);
     }
 }
