@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - Exercise002",
+            "request": "launch",
+            "mainClass": "com.techreturners.exercise002.Exercise002",
+            "projectName": "coding-exercises"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - Exercise001",
             "request": "launch",
             "mainClass": "com.techreturners.exercise001.Exercise001",
