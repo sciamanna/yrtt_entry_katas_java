@@ -7,6 +7,6 @@ public class Exercise002 {
 
     public int past(int h, int m, int s) {
         // Your code here!
-        return 0;
+        return ((h * 60 * 60) + (m * 60) + s) * 1000;
     }
 }
