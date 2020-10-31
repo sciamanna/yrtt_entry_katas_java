@@ -20,7 +20,7 @@ public class Exercise001 {
 
         for (int i=0; i<arr.length; i++)
         {
-            System.out.println("Starting position: " + i + " value: " + arr[i]);
+            //System.out.println("Starting position: " + i + " value: " + arr[i]);
             int item=arr[i];
             unique = true;
 
@@ -29,7 +29,7 @@ public class Exercise001 {
                 if (i==y)
                     continue;
 
-                System.out.println("Comparing position: " + y + " value: " + arr[y] + " to value: " + item);
+                //System.out.println("Comparing position: " + y + " value: " + arr[y] + " to value: " + item);
                 if (item == arr[y]){
                     unique = false;
                     System.out.println("Value: " + item + " is not unique, skipping");
@@ -37,9 +37,9 @@ public class Exercise001 {
                 }
             }    
             if (unique == true) {
-                System.out.println("Value: " + item + " is unique, adding to total");
+                //System.out.println("Value: " + item + " is unique, adding to total");
                 sum = sum + item;  
-                System.out.println("Sum is now: " + sum);
+                //System.out.println("Sum is now: " + sum);
             }
         }
         return sum;
